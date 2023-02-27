@@ -1,0 +1,1 @@
+Ebben az Egyéb fájlok mappában vannak a tanfolyam előtt készített html és css fájlok és mappák
