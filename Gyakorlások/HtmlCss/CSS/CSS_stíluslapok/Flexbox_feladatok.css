@@ -1,0 +1,120 @@
+.flexbox-tarolo{
+    display: flex;
+    background-color: lightblue;
+    flex-flow: column wrap;
+    width: 100px;
+}
+
+.flexbox-elem{
+    align-content: center;
+    line-height: 100px;
+    text-align: center;
+    font-size: xx-large;
+    margin: 20px;
+    background-color: lightcoral;
+    font: 700;
+    text-transform: capitalize;
+    color: deepskyblue ;
+    height: 100px;
+    width: 100px;
+    
+}
+.fő-elem{
+    display: inline-block;
+}
+#harmadik-elem{
+    background-color: aquamarine;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    
+}
+#negyedik-elem{
+    background-color: rgb(255, 219, 127);
+    height: 100px;
+    width: 100px;
+
+    margin: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+}
+
+.order-minusz-egy{
+    align-content: center;
+    line-height: 100px;
+    text-align: center;
+    font-size: xx-large;
+    margin: 20px;
+    background-color: lightcoral;
+    font: 700;
+    text-transform: capitalize;
+    color: deepskyblue ;
+    height: 100px;
+    width: 100px;
+    order: -1;
+    /* flex-shrink: 10; */
+    flex-grow: 7;
+}
+nav{
+    display: inline;
+}
+.bal-menü-doboz{
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    flex-direction: column;
+    background-color: antiquewhite;
+    max-width: 200px;
+}
+.lorem{
+    display: inline;
+    max-width: 400px;
+}
+
+.felso-nav-tarolo{
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    background-color: aquamarine;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    top:0;
+    margin: 20px;
+}
+.felso-nav-elem{
+    margin: 10px;
+
+}
+.felso-nav-elem:hover{
+    background-color: black;
+    color:white
+}
+.cikkek{
+    display: flex;
+    /* max-width: 700px; */
+    
+}
+#elso-cikk{
+  
+}
+.main{
+    display: inline;
+    
+}
+.bal-menü-doboz{
+    display: flex;
+}
+/* .bal-menü{
+    display: flex;
+} */
