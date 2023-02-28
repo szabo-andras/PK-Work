@@ -14,4 +14,5 @@
 - Git/GitHub létrehozása (szenvedéssel, de össze lett drótozva :-) )
 - Első Markdown fájl létrehozása
 - Napló elkezdése ebben a markdown fájlban
-- 28.02.2023: ma befejeztem a SanFrancisco-bol jöttem Git tanfolyamát
+28.02.2023.: ma befejeztem a SanFrancisco-bol jöttem Git tanfolyamát
+   - A Robi 2023.02.21-i Git/GitHub előadása alapján létrehozok egy teljesen új üres repositoryt PK-Work2 néven gyakorlás képpen
