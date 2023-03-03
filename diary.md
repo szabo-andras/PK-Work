@@ -23,4 +23,4 @@
   
 2023.03.03.:
 -  12:30 Flexbox Zombie 5. rész, Flex-grow. ,és 6. rész Flex-shrink
--  
+-  Git és Github: 3 órás tanfolyam (2020) Zsolt videóját megnézem és a benne levő dolgokat vele együtt csinálom
