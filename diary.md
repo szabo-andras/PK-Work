@@ -15,4 +15,12 @@
 - Első Markdown fájl létrehozása
 - Napló elkezdése ebben a markdown fájlban
 28.02.2023.: ma befejeztem a SanFrancisco-bol jöttem Git tanfolyamát
-   - A Robi 2023.02.21-i Git/GitHub előadása alapján létrehozok egy teljesen új üres repositoryt PK-Work2 néven gyakorlás képpen
+   - A Robi 2023.02.21-i Git/GitHub előadása alapján létrehozok egy teljesen új üres repositoryt teszt néven a WebDev/Temp mappában gyakorlás képpen
+
+2023.03.01.:
+-  10:30 Flexbox Zombie gyakorlás elölről
+-  11:15 Befejeztem az első 4 chapter átismétlését
+  
+2023.03.03.:
+-  12:30 Flexbox Zombie 5. rész, Flex-grow. ,és 6. rész Flex-shrink
+-  
