@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fejlesztő Feri Frontend Fejlesztő</title>
+    <!-- fontawesome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles/styles.css" />
+  </head>
+  <body>
+    <!--      HEADER      -->
+    <header>
+      <a href="#fooldal">ff</a>
+      <nav id="navigacios_menu">
+        <div>ez itt a div</div>
+        <ul class="navigacios_elemek">
+          <li>
+            <a href="#fooldal">
+              <!-- Ez a kis házikó ikon:
+                <i class="fa-solid fa-house"></i> -->
+              Főoldal</a>
+          </li>
+          <li><a href="#rolam">Rólam</a></li>
+          <li><a href="#portfolio">Portfólió</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--      MAIN     -->
+    <main>
+      <section id="fooldal">Főoldal</section>
+      <div class="fooldal-szoveg">
+        <h1>Fejlesztő Feri</h1>
+        <h2>Frontend fejlesztő</h2>
+        <a href="#kapcsolat" class="fooldal-gomb">Kapcsolat</a>
+      </div>
+      <div class="fooldal-kep">
+        <img
+          src="./Assets/mark-farias-dt60oksDTx8-unsplash-removebg-preview.png"
+          alt="Frontend Feri" />
+      </div>
+
+      <section id="rolam">
+        Rólam
+        <h2>Hello</h2>
+        <h3>Az én nevem Feri</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas debitis
+          doloribus earum, provident ab quam alias esse aliquam minima! Quod
+          tempora molestias, aliquid velit alias rem praesentium eveniet nobis
+          perferendis?
+        </p>
+        <div class="rolam-technologiak">
+          <p><i class="fa-brands fa-html5"></i></p>
+          <p><i class="fa-brands fa-css3-alt"></i></p>
+          <p><i class="fa-brands fa-js"></i></p>
+        </div>
+      </section>
+      <section id="portfolio">
+        Portfólió
+        <h2>Portfólió</h2>
+        <div class="portfolio-kontener"></div>
+      </section>
+      <section id="kapcsolat">Kapcsolat</section>
+      <form
+        class="kapcsolat-form"
+        action="https://formspree.io/f/xqkodjwy"
+        method="POST">
+        Kapcsolat
+
+        <!--NÉV-->
+        <label>Név
+          <input type="text" name="name" id="nev" placeholder="Név" />
+        </label>
+        <!--Email-->
+        <label>
+          <input type="email" name="name" id="nev" placeholder="E-mail" />
+        </label>
+        <!--Üzenet-->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!--Gomb-->
+        <input type="submit" />
+      </form>
+    </main>
+    <!--      FOOTER      -->
+    <footer>
+      <p>Copyright<span>&copy;</span></p>
+      <a href="#fooldal">Vissza</a>
+    </footer>
+  </body>
+</html>
