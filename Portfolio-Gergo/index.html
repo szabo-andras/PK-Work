@@ -1,35 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Feri - Webfejlesztő</title>
-</head>
-<body>
-    <!-- Fejléc-->
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <title>Fejlesztő Feri | Frontend fejlesztő</title>
+    <!-- Fontawesome CDN :-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!--  FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <!--    HEADER  -->
     <header>
-        <nav>
-
-        </nav>
+      <a href="">ff<img src="" alt="logo" /></a>
+      <nav>
+        <ul>
+          <li><a href="#fooldal">Főoldal</a></li>
+          <li><a href="#rolam">Rólam</a></li>
+          <li><a href="#portfolio">Portfólió</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
+      </nav>
     </header>
-    
-    
-    
-    
-    <!-- MAIN -->
-    <main>
-        <img src="" alt="profilkep">
 
+    <!--    MAIN    -->
+    <main>
+      <!--    Főoldal szekció     -->
+      <section id="fooldal">
+        <div class="fooldal-szoveg">
+          <h1>Fejlesztő Feri</h1>
+          <h2>Frontend fejlesztő</h2>
+          <a href="#kapcsolat" class="fooldal-gomb">Kapcsolat</a>
+        </div>
+        <div class="fooldal-kep">
+          <img
+            src="./Assets/mark-farias-dt60oksDTx8-unsplash-removebg-preview.png"
+            alt="Frontend Feri - profilkep" />
+        </div>
+      </section>
+
+      <!--    Rólam szekció     -->
+      <section id="rolam">
+        <div class="rolam-bemutatkozas">
+          <h2>Heló</h2>
+          <h3>Az én nevem Feri</h3>
+          <p>Ide kell leírnom, hogy ki is vagyok és mit is csinálok...</p>
+        </div>
+        <div class="rolam-technologiak">
+          <h2>Technológiák</h2>
+          <p><i class="fa-brands fa-html5"></i></p>
+          <p><i class="fa-brands fa-css3-alt"></i></p>
+          <p><i class="fa-brands fa-js"></i></p>
+        </div>
+      </section>
+      <!--    Portfólió szekció     -->
+      <section id="portfolio">
+        <h2>Portfólió</h2>
+        <h3>Projekt 1</h3>
+        <div class="portfolio-kontener">
+          <img id="kep-webpage" src="./Assets/webpage.jpg" alt="Portfólió" />
+          <a href="https://www.github.com" target="_blank"
+            ><i class="fa-brands fa-github-alt"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+          <p>Ez a fenti projekt rövid leírása:...</p>
+        </div>
+        <h3>Projekt 2</h3>
+        >
+        <div class="portfolio-kontener">
+          <img id="kep-webpage" src="./Assets/webpage.jpg" alt="Portfólió" />
+          <a href="https://www.github.com" target="_blank"
+            ><i class="fa-brands fa-github-alt"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+          <p>Ez a fenti projekt rövid leírása:...</p>
+        </div>
+        <h3>Projekt 3</h3>
+        <div class="portfolio-kontener">
+          <img id="kep-webpage" src="./Assets/webpage.jpg" alt="Portfólió" />
+          <a href="https://www.github.com" target="_blank"
+            ><i class="fa-brands fa-github-alt"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+          <p>Ez a fenti projekt rövid leírása:...</p>
+        </div>
+        <h3>Projekt 4</h3>
+        <div class="portfolio-kontener">
+          <img id="kep-webpage" src="./Assets/webpage.jpg" alt="Portfólió" />
+          <a href="https://www.github.com" target="_blank"
+            ><i class="fa-brands fa-github-alt"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+          <p>Ez a fenti projekt rövid leírása:...</p>
+        </div>
+      </section>
+      <!--    Kapcsolat szekció     -->
+      <section id="kapcsolat">
+        Kapcsolat
+        <form
+          class="kapcsolat-form"
+          action="https://formspree.io/f/xrgvyakq"
+          method="POST">
+          <!--  NÉV -->
+          <label>
+            Név:
+            <!-- input attribútumai: 
+            
+              type="az űrlapelem típusa, pl button, radio, textarea, checkbox"
+            name=" az űrlapelem fejléce a formspree oldalon"
+            required attribútum beírása esetén a kitöltő nem hagyhatja üresen ezt a mezőt 
+          -->
+
+            <input
+              type="text"
+              name="Név"
+              id="nev"
+              placeholder="Írd be a neved..."
+              required />
+          </label>
+          <!--  EMAIL -->
+          <label
+            >E-mail:
+            <input
+              type="email"
+              name="e-mail cím"
+              id="email"
+              placeholder="nev@domain.com"
+              required />
+          </label>
+          <!--  TELEFONSZÁM -->
+          <label
+            >Telefonszám:
+            <input
+              type="tel"
+              name="telefonszam"
+              id="telefonszam"
+              pattern="((?:\+?3|0)6)(?:-|\()?(\d{1,2})(?:-|\))?(\d{3})-?(\d{3,4})"
+              placeholder="+361234567"
+              required />
+            Pl.:+361234567
+          </label>
+          <!--  ÜZENET -->
+          <label
+            >Üzenet:
+            <textarea
+              id="uzenet-szovege"
+              name="Üzenet"
+              placeholder="Ide írd az üzenetedet...!"
+              required>
+            </textarea>
+          </label>
+          <!--  GOMB  -->
+          <input type="submit" />
+        </form>
+        <ul>
+          <li class="kapcsolat-elem" id="github-kapcsolat-elem">
+            <a href="https://www.github.com" target="_blank">
+              <i class="fa-brands fa-github-alt"></i>
+            </a>
+          </li>
+          <li class="kapcsolat-elem" id="LinkedIn-kapcsolat-elem">
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="kapcsolat-elem" id="Twitter-kapcsolat-elem">
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-square-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
-    
-    
-    
-    
-    
-    <!-- FOOTER -->
+
+    <!--    FOOTER  -->
     <footer>
-        
+      <p>Copyright <span>&copy;</span> 2023 Szabó András</p>
+      <a href="#fooldal"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
-</body>
+  </body>
 </html>
