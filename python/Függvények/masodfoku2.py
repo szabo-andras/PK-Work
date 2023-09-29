@@ -14,9 +14,10 @@ x2=False
 x=False
 
 def masodfoku(a,b,c):
+    global x
     global x1
     global x2
-    global x
+
 
     print("Na most akkor kiszámolom neked:")
     print()
