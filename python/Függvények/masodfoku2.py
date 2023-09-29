@@ -1,10 +1,8 @@
 import math
-print()
-print()
+print("", end= "\n\n")
 print("#19.Készíts egy függvényt, amely elvégzi egy másodfokú egyenlet megoldását. Feltételes utasításra is szükség van a megoldáshoz.")
 print("**************************************")
-print()
-print()
+print("", end= "\n\n")
 #Bekérjük az adatokat:
 a=int(input("Add meg 'a' értékét: "))
 b=int(input("Add meg 'b' értékét: "))
@@ -53,11 +51,9 @@ def masodfoku(a,b,c):
 def ellenorzes (x,x1,x2):
     
     
-    print()
-    print()
+    print("", end= "\n\n")
     print("**************************************")
-    print()
-    print()
+    print("", end= "\n\n")
     print("ELLENŐRZÉS 'x', VAGY 'x1' és 'x2' behelyettesítésével:")
     print()
     print("A számított értékeink a következők:")
@@ -70,8 +66,7 @@ def ellenorzes (x,x1,x2):
         print()
         print("Amit én számoltam az pedig:")
         print(f"x1={x1}, x2={x2}")
-        print()
-        print()
+        print("", end= "\n\n")
         print("Szóval a nagy kérdés, hogy...")
         print(f"Igaz, hogy: {a}*{x1}*{x1}+b*{x1}+c = 0 ???", round(a*x1*x1+b*x1+c,2) ,"=0")
         print(round(a*x1*x1+b*x1+c,2)==0)
@@ -83,8 +78,7 @@ def ellenorzes (x,x1,x2):
         print()
         print("Amit én számoltam az pedig:")
         print(f"x={x}")
-        print()
-        print()
+        print("", end= "\n\n")        
         print("Szóval a nagy kérdés, hogy...")
         print("Igaz, hogy: ", round(a*x*x+b*x+c,2) ,"=0")
         print(round(a*x*x+b*x+c,2)==0)
@@ -107,7 +101,7 @@ def ellenorizzuk():
 masodfoku(a,b,c)
 ellenorizzuk()
 
-print()
+print("", end= "\n\n")
 print("Vége")
 
 
