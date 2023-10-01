@@ -1,11 +1,18 @@
 import datetime
 import math
 import random
-""" #1. Kérd be a felhasználó nevét. Köszöntsd a felhasználót a saját nevén. 
+
+def print_feladat_vege():
+    print()
+    print("**************************", end="\n\n")
+
+print(" #1. Kérd be a felhasználó nevét. Köszöntsd a felhasználót a saját nevén. ")
 felhasznalonev = str(input("Add meg a neved:"))
 print("Szervusz",felhasznalonev)
 
-#2. Kérd be a felhasználó magasságát, és írd ki, hogy mennyivel magasabb, mint 100
+print_feladat_vege()
+
+print("#2. Kérd be a felhasználó magasságát, és írd ki, hogy mennyivel magasabb, mint 100")
 magassag=False
 while magassag==False:
     try:
@@ -19,36 +26,52 @@ elif 100<magassag:
     print("Te ",magassag-100,"cm-rel magasabb vagy, mint 100cm")
 else:
     print("Jajj de negatív vagy")
-#3. Kérj be a felhasználótól egy szöveges értéket egy változóba.
+print_feladat_vege()
 
+print("#3. Kérj be a felhasználótól egy szöveges értéket egy változóba.")
 varos = input("Hol születtél? ")
-#4. Írasd ki a bekért változó minden második betűjét!
+
+print_feladat_vege()
+
+print("#4. Írasd ki a bekért változó minden második betűjét!")
 print(varos[1::2])
 
-#5. Írasd ki a bekért változó minden második betűjét visszafelé!
+print_feladat_vege()
+
+print("#5. Írasd ki a bekért változó minden második betűjét visszafelé!")
 print(varos[-2::-2])
 
-#6. Írasd ki a bekért változó minden betűjét a 3. karaktertől visszafelé!
+print_feladat_vege()
+
+print("#6. Írasd ki a bekért változó minden betűjét a 3. karaktertől visszafelé!")
 print(varos[2::-1])
 
-#7. Írasd ki a bekért szöveges változó minden karakterét a harmadik és hatodik karakterek között
+print_feladat_vege()
+
+print("#7. Írasd ki a bekért szöveges változó minden karakterét a harmadik és hatodik karakterek között")
 print(varos[2:5:1])
 
-#8. Írasd ki a bekért szöveges változó utolsó előtti karakterét
+print_feladat_vege()
+
+print("#8. Írasd ki a bekért szöveges változó utolsó előtti karakterét")
 print(varos[-2:-1])
-"""
-#9. Kérd be egy derékszögű háromszög két befogóját, számítsd ki az átfogóját, majd írasd ki két tizedes jegy pontossággal
-""" 
+
+print_feladat_vege()
+
+print("#9. Kérd be egy derékszögű háromszög két befogóját, számítsd ki az átfogóját, majd írasd ki két tizedes jegy pontossággal")
+ 
 befogó1=int(input("befogó1:"))
 befogó2=int(input("befogó2:"))
 
 def atfogo(befogo1,befogo2):
     return float(pow(pow(befogo1,2)+pow(befogo2,2),0.5))
 print(round(atfogo(befogó1,befogó2),2))
- """
-#10. Kérd be egy kör sugarát, számítsd ki a kerületét és területét, majd írasd ki egy tizedes jegy pontossággal.
 
-""" sugar=int(input("Add meg a sugár hosszát: "))
+print_feladat_vege()
+
+print("#10. Kérd be egy kör sugarát, számítsd ki a kerületét és területét, majd írasd ki egy tizedes jegy pontossággal.")
+
+sugar=int(input("Add meg a sugár hosszát: "))
 
 def kor_terulet():
     return pow(sugar,2)*math.pi
@@ -57,11 +80,13 @@ def kor_kerulet():
     return 2*sugar*math.pi
 
 print("Terület: ",round(kor_terulet(),1))
-print("Kerület: ",round(kor_kerulet(),1)) """
+print("Kerület: ",round(kor_kerulet(),1))
 
-#11. Kérd be egy kör sugarát, számítsd ki a kerületét és területét, majd írasd ki három tizedes jegy pontossággal.
+print_feladat_vege()
 
-""" sugar=int(input("Add meg a sugár hosszát: "))
+print("#11. Kérd be egy kör sugarát, számítsd ki a kerületét és területét, majd írasd ki három tizedes jegy pontossággal.")
+
+sugar=int(input("Add meg a sugár hosszát: "))
 
 def kor_terulet():
     return pow(sugar,2)*math.pi
@@ -70,21 +95,28 @@ def kor_kerulet():
     return 2*sugar*math.pi
 
 print("Terület: ",round(kor_terulet(),3))
-print("Kerület: ",round(kor_kerulet(),3)) """
+print("Kerület: ",round(kor_kerulet(),3))
 
-#12. Írd le a következő logikai összefüggést a fentiek alapján: (A kisebb, mint 5 ÉS B nagyobb egyenlő, mint 6) VAGY A nagyobb, mint B.
-""" A=int(input("A: "))
+print_feladat_vege()
+
+print("#12. Írd le a következő logikai összefüggést a fentiek alapján: (A kisebb, mint 5 ÉS B nagyobb egyenlő, mint 6) VAGY A nagyobb, mint B.")
+A=int(input("A: "))
 B=int(input("B: "))
 if (A<5 and B>=6) or A>B:
-    pass """
+    pass
 
-#13. Írd le a következő logikai összefüggést a fentiek alapján: A egyenlő-e B-vel?
+print_feladat_vege()
 
-""" if A==B:
-    pass """
+print("#13. Írd le a következő logikai összefüggést a fentiek alapján: A egyenlő-e B-vel?")
 
-#14. Kő papír olló
-""" A_nyertes=0
+if A==B:
+    pass
+
+print_feladat_vege()
+
+print("#14. Kő papír olló")
+
+A_nyertes=0
 B_nyertes=0
 global jatekok_szama
 jatekok_szama=0
@@ -175,21 +207,23 @@ while tovabbi_jatek=="i":
 
 vegeredmenyvizsgalat(A_nyertes,B_nyertes)
 print("lejátszott körök száma: ", jatekszamolas())
- """
 
-# 16 Kérj be egy szöveget a felhasználótól, majd írasd ki a szöveg karaktereit egymás alá. Készítsd el ezt az algoritmus a for és a while ciklus segítségével is.
+print_feladat_vege()
+print("# 16 Kérj be egy szöveget a felhasználótól, majd írasd ki a szöveg karaktereit egymás alá. Készítsd el ezt az algoritmus a for és a while ciklus segítségével is.")
 
-""" szoveg=input("Írj be egy szöveget ide: ")
+szoveg=input("Írj be egy szöveget ide: ")
 for i in szoveg:
     print(i)
 print()
 x=0
 while len(szoveg)>x:
     print(szoveg[x])
-    x+=1 """
+    x+=1
 
-#17.Készíts egy olyan algoritmust, amely képes értéket adni egy 3 x 3 -as táblázat minden egyes cellájának. (Ehhez két ciklusra lesz szükséges, amelyek egymásba vannak ágyazva. Az egyik lépkedjen végig a táblázat sorain, a másik pedig az oszlopain.)
-""" oszlopszam=False
+print_feladat_vege()
+
+print("#17.Készíts egy olyan algoritmust, amely képes értéket adni egy 3 x 3 -as táblázat minden egyes cellájának. (Ehhez két ciklusra lesz szükséges, amelyek egymásba vannak ágyazva. Az egyik lépkedjen végig a táblázat sorain, a másik pedig az oszlopain.)")
+oszlopszam=False
 while oszlopszam==False:
     try:
         oszlopszam=int(input("hány oszlopot szeretnél? "))
@@ -214,78 +248,149 @@ while sor<=sorszam:
     lista_sorai.append(lista_oszlopai)
     sor+=1
 
-print(lista_sorai) """
+print(lista_sorai)
 
-#18.Készíts egy függvényt, amely összead két számot és az eredményt adja visszatérési értékként.
-""" A=int(input("Adj meg egy számot (A)"))
+print_feladat_vege()
+
+print("#18.Készíts egy függvényt, amely összead két számot és az eredményt adja visszatérési értékként.")
+A=int(input("Adj meg egy számot (A)"))
 B=int(input("Adj meg egy számot (B)"))
 def összeadás_függvény(A,B):
     return A+B
 
-print(összeadás_függvény(A,B)) """
-print()
-print("**************************") 
+print(összeadás_függvény(A,B))
+
+print_feladat_vege()
+
+
 
 print("#19.Készíts egy függvényt, amely elvégzi egy másodfokú egyenlet megoldását. Feltételes utasításra is szükség van a megoldáshoz.")
+print("**************************************")
+print("", end= "\n\n")
+import math
+a=False
+b=False
+c=False
+print("", end= "\n\n")
+print("#19.Készíts egy függvényt, amely elvégzi egy másodfokú egyenlet megoldását. Feltételes utasításra is szükség van a megoldáshoz.")
+print("**************************************")
+print("", end= "\n\n")
+#Bekérjük az adatokat:
+while a==False:
+    try:
+        a=float(input("Add meg 'a' értékét: "))
+    except:
+        print("Adj meg egy számot!")
+        a=False
+while b==False:
+    try:
+        b=float(input("Add meg 'b' értékét: "))
+    except:
+        print("Adj meg egy számot!")
+while c==False:
+    try:
+        c=float(input("Add meg 'c' értékét: "))
+    except:
+        print("Adj meg egy számot!")
+#létrehozzuk x,x1 és x2 változókat, hogy később a függvényben használhassuk őket
+x1=False
+x2=False
+x=False
 
-a=float(input("add meg A értékét"))
-b=float(input("add meg B értékét"))
-c=float(input("add meg C értékét"))
+def masodfoku(a,b,c):
+    global x
+    global x1
+    global x2
 
-def masodfoku():
+    print("Na most akkor kiszámolom neked:")
+    print()
+    print("Először is ellenőrzöm, hogy 'a' értéke nem egyenlő 0-val, mert a képletben 'a' a nevezőben van, ami nem lehet nulla:")
     if a!=0:
-        D=pow(b,2)-4*a*c
+        print(f"Szuper!!! 'a' értéke {a}, vagyis nem nulla, ezért mehetünk tovább...")
+        print()
+        print("Most megvizsgálom a D, diszkrimináns értékét")
+        D=(b*b)-(4*a*c) #Kiszámoljuk a gyökjel alatt levő D=diszkrimináns értékét
         print("A diszkrimináns D=",D)
         
         if D>0:
-            print("mivel" ,D, "> 0, ezért az egyenletnek 2 megoldása van, x1, és x2:")
-            x1=(-b+D)/2*a
-            x2=(-b-D)/2*a
+            print("Mivel" ,D, "> 0, - más szóval a diszkrimináns pozitív - ezért az egyenletnek 2 megoldása van, x1, és x2:")
+            x1=(-b+math.sqrt(D))/(2*a)
+            x2=(-b-math.sqrt(D))/(2*a)
+            print()
             print ("x1=",x1)
+            print()
             print("x2=",x2)
+            return x1, x2
+        
         elif D==0:
             print("Mivel a", D,"= 0 ezért az egyenletnek 2 azonos megoldása van, x1 és x2 = x")
-            x=(-b+xD)/2*a
+            x=(-b+math.sqrt(D))/(2*a)
+            print("x=",x)
+            return x
         else:
             print("Mivel a ",D,"< 0, ezért a függvény nem metszi az x tengelyt, nincsen valós gyöke")
-
-masodfoku() 
-print()
-print("**************************")
-
-
-print()
-print("**************************")
-print("#1. FizzBuzz feladat számok sorban, de ahol 3-mal osztható, ott Fizz, ahol 5-tel ott Buzz, ahol mindkettővel, ott FizzBuzz legyen kiírva")
-
-for i in range(1,31):
-    if i%3==0 and i%5!=0:
-        print("Fizz")
-    elif i%5==0 and i%3 != 0:
-        print("Buzz")
-    elif i%5==0 and i%3==0:
-        print("FizzBuzz")
     else:
-        print(i)
-print()
-print("**************************")
-print("#2. Mikor lennél 100 éves?")
+        print("'A' értéke nem lehet 0!")
 
-import datetime
-year = datetime.date.today().year
+def ellenorzes (x,x1,x2):
+    
+    
+    print("", end= "\n\n")
+    print("**************************************")
+    print("", end= "\n\n")
+    print("ELLENŐRZÉS 'x', VAGY 'x1' és 'x2' behelyettesítésével:")
+    print()
+    print("A számított értékeink a következők:")
+    print("x=",x,"x1=",x1,"x2=",x2)
+    print()
+    print("Te pedig az alábbi értékeket adtad meg:")
+    print("a=",a,"b=",b,"c=",c)
+    # Ellenőrizzük az eredményeket közelítő értékkel
+    if x1!=False:
+        print()
+        print("Amit én számoltam az pedig:")
+        print(f"x1={x1}, x2={x2}")
+        print("", end= "\n\n")
+        print("Szóval a nagy kérdés, hogy...")
+        print(f"Igaz, hogy: {a}*{x1}*{x1}+b*{x1}+c = 0 ???", round(a*x1*x1+b*x1+c,2) ,"=0")
+        print(round(a*x1*x1+b*x1+c,2)==0)
+        print()
+        print("Igaz, hogy: ", round(a*x2*x2+b*x2+c,2) ,"=0")
+        print(round(a*x2*x2+b*x2+c,2)==0)    
+        
+    elif x!=False:
+        print()
+        print("Amit én számoltam az pedig:")
+        print(f"x={x}")
+        print("", end= "\n\n")        
+        print("Szóval a nagy kérdés, hogy...")
+        print("Igaz, hogy: ", round(a*x*x+b*x+c,2) ,"=0")
+        print(round(a*x*x+b*x+c,2)==0)
+    else:
+        print("nincs megoldás, mert A értéke nem lehet 0")
 
-print("Today's date:", datetime.date.today()) 
+def ellenorizzuk():
+    valasz=False
+    while valasz==False:
+        valasz=input("Ellenőrizzük, hogy helyesen számoltam-e? (i=Igen, n=Nem): ")
+        if valasz=="i":
+            ellenorzes(x,x1,x2)
+        elif valasz=="n":
+            print("Örülök, hogy hiszel nekem és nem kell bizonyítanom az igazamat :-)")
+        else:
+            print()
+            print("Válassz a megadott lehetőségek közül!!!")
+            valasz=False
 
-eletkor=int(input("Hány éves vagy? "))
-kulonbseg=100-eletkor
-print("Te",year+kulonbseg,"-ben,", kulonbseg,"év múlva leszel 100 éves")
-szuletesi_ev=int(input("Melyik évben születtél? "))
-print("Te",szuletesi_ev+100,"-ben,", kulonbseg,"év múlva leszel 100 éves")
+masodfoku(a,b,c)
+ellenorizzuk()
 
-print()
-print("**************************")
+print("", end= "\n\n")
+print("Vége")
 
-#3. Páros vagy páratlan számot írtunk be?
+print_feladat_vege()
+
+print("#3. Páros vagy páratlan számot írtunk be?")
 szam=True
 while szam==True:
     try:
@@ -300,8 +405,7 @@ elif szam%2!=0:
 else:
     print("A",szam,"nem páros és nem páratlan")
 
-print()
-print("**************************")
+print_feladat_vege()
 
 print("#4. Írjuk ki egy lista x-nél kisebb elemeit!")
 
@@ -318,9 +422,7 @@ x=int(input("Hányadik elemig írjuk ki a lista elemeit?"))
 for i in range(0,x-1):
     print(lista[i])
 
-print()
-print("**************************")
-
+print_feladat_vege()
 print("#7. Fibonacci sor kiírása! A Fibonacci-számok a matematikában az egyik legismertebb másodrendben rekurzív sorozat elemei. A nulladik eleme 0, az első eleme 1, a további elemeket az előző kettő összegeként kapjuk.")
 
 n=int(input("Milyen hosszú legyen a lista? "))
