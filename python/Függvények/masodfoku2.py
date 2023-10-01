@@ -1,11 +1,12 @@
-import math
-a=False
-b=False
-c=False
+
 print("", end= "\n\n")
 print("#19.Készíts egy függvényt, amely elvégzi egy másodfokú egyenlet megoldását. Feltételes utasításra is szükség van a megoldáshoz.")
 print("**************************************")
 print("", end= "\n\n")
+import math
+a=False
+b=False
+c=False
 #Bekérjük az adatokat:
 while a==False:
     try:
