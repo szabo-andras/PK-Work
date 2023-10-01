@@ -1,13 +1,28 @@
 import math
+a=False
+b=False
+c=False
 print("", end= "\n\n")
 print("#19.Készíts egy függvényt, amely elvégzi egy másodfokú egyenlet megoldását. Feltételes utasításra is szükség van a megoldáshoz.")
 print("**************************************")
 print("", end= "\n\n")
 #Bekérjük az adatokat:
-a=int(input("Add meg 'a' értékét: "))
-b=int(input("Add meg 'b' értékét: "))
-c=int(input("Add meg 'c' értékét: "))
-
+while a==False:
+    try:
+        a=float(input("Add meg 'a' értékét: "))
+    except:
+        print("Adj meg egy számot!")
+        a=False
+while b==False:
+    try:
+        b=float(input("Add meg 'b' értékét: "))
+    except:
+        print("Adj meg egy számot!")
+while c==False:
+    try:
+        c=float(input("Add meg 'c' értékét: "))
+    except:
+        print("Adj meg egy számot!")
 #létrehozzuk x,x1 és x2 változókat, hogy később a függvényben használhassuk őket
 x1=False
 x2=False
@@ -17,7 +32,6 @@ def masodfoku(a,b,c):
     global x
     global x1
     global x2
-
 
     print("Na most akkor kiszámolom neked:")
     print()
