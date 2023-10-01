@@ -119,15 +119,3 @@ ellenorizzuk()
 
 print("", end= "\n\n")
 print("Vége")
-
-
-
-    
-    
-    
-
-
-    
-
-
-
