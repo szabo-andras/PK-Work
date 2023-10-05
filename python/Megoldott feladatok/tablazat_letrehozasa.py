@@ -1,8 +1,3 @@
-""" Torpedó """
-
-#A játéktér elkészítése:
-#Készítek egy x*y méretű "táblázatot"
-
 tablazat=[]
 oszlop=[]
 sor=[]
