@@ -33,7 +33,8 @@ while not 0 < jatekok_osszesen < 10:
         jatekok_osszesen = int(input("Hány kört szeretnél játszani?"))
     except:
         print("Számot adj meg")
-    print(" 0 és 10 kör között választhatsz")
+    if not 0 > jatekok_osszesen >=10:
+        print(" 0 és 10 kör között választhatsz")
 
 while not 0 < gep_elleni < 3 :
     try:
