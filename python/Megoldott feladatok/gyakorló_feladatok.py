@@ -1,4 +1,4 @@
-import datetime
+""" import datetime
 import math
 import random
 
@@ -437,8 +437,35 @@ while len(lista)<n:
     y=tarolo
 
 print(lista)
+     """
 
+""" 25. Egy autónak van típusa (string), rendszáma (string), tulajdonosa (string), 
+lóerőszáma (egész szám), és mérjük benne a megtett kilométerek számát is (integer).
+Hozz létre egy dict (szótár) típust, amelyben egy konkrét autó példányt hozol létre 
+az általad megadott adatokkal."""
 
+auto={"típus":"Ford Galaxy","rendszam":"LOV-572", "tulajdonos":"Andras", "LE":int(90), "km":int(300000) }
+print(auto)
 
+"""26. Írd ki print utasítás segítségével a 25. feladatban létrehozott autó 
+típusát és teljesítményét, és a teljesítmény mögé írd a LE (lóerő) mértékegységet. 
+Az egész print utasítást egyetlen sorban hozd létre.
+"""
 
-    
+print(auto["típus"]," ",auto["LE"],"LE",sep="")
+
+"""27. Hozz létre egy listát, amelyben összesen 3 autó szerepel. 
+Az egyes autók értékeit tetszőlegesen beállíthatod, de legyenek egymástól 
+különbözőek."""
+
+autolista=["Ford Galaxy", "VW Polo", "Trabant"]
+
+"""28. Sorold fel a 27. feladatban létrehozott lista kulcsait. 
+Print utasítás segítségével írd ki a lista tetszőleges elemét.
+"""
+for kulcs in range(0,len(autolista)):
+    print("kulcs",kulcs)
+print("28.feladat:",autolista[1])
+
+"""29. Sorold fel a 27. feladatban létrehozott lista tetszőleges elemének kulcsait. Print utasítás segítségével írd ki a lista tetszőleges elemének tetszőleges értékét. 
+"""
