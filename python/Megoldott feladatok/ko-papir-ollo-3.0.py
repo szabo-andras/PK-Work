@@ -6,16 +6,12 @@ A játék menete:
 - A játékos választ Kő, Papír, Olló közül
 - B játékos (vagy a Gép), választ szintén Kő, Papír, vagy Olló közül
 
-- A program összehasonlítja a választűsokat és kiírja, hogy melyik játékos nyerte a kört
+- A program összehasonlítja a választípusokat és kiírja, hogy melyik játékos nyerte a kört
 - Az összes kör lejátszása után a program kiértékeli, hogy összesítésben melyik játékos nyert
 """
 
 import random
 import time
-
-
-
-
 
 print("",end="\n\n")
 print("KŐ, PAPÍR, OLLÓ")
