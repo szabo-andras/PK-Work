@@ -24,23 +24,21 @@ gep_elleni = 0
 jatekok_osszesen = False
 dontetlenek_szama = 0
 
-
-
 while not 0 < gep_elleni < 3:
   try:
     gep_elleni = int(
-        input("Válassz játék típust! (1 = Gép elleni játék, 2 = PVP)"))
+        input("Válassz játék típust! (1 = Gép elleni játék, 2 = PVP) "))
   except:
     print("", end="")
   
   if not 0 < gep_elleni < 3:
-    print("Válassz 1, vagy 2 közül!")
+    print("Válassz 1, vagy 2 közül! ")
   elif gep_elleni == 1:
     print("\n","A gép ellen játszol... Ő lesz a B-játékos és TE fogsz kezdeni.","Kösd fel a gatyád!", sep="\n", end="\n\n")
 
 while not 0 < jatekok_osszesen < 10:
   try:
-    jatekok_osszesen = int(input("Hány kört szeretnél játszani? (1 és 10 kör között választhatsz)"))
+    jatekok_osszesen = int(input("Hány kört szeretnél játszani? (1 és 10 kör között választhatsz) "))
   except:
     print("Számot adj meg")
   if not 0 < jatekok_osszesen <= 10:
@@ -53,12 +51,10 @@ def gondolkodas():
   varakozas_ido = random.randint(0, 2)
   time.sleep(varakozas_ido)
 
-
 def jatekszamolas():
   global lejatszott_jatekok_szama
   lejatszott_jatekok_szama += 1
   return lejatszott_jatekok_szama
-
 
 def vegeredmenyvizsgalat(A_nyertes, B_nyertes):
   # A végeredmény: A_nyertes és B_nyertes változók összehasonlításából ered
@@ -78,26 +74,21 @@ while lejatszott_jatekok_szama != jatekok_osszesen:
   A = False
   B = False
 
-  while A == False:
+  while not A:
     try:
-      A = int(input("'A' játékos tipje: (1=Kő, 2=Papír, 3=Olló)"))
+      A = int(input("'A' játékos tipje: (1=Kő, 2=Papír, 3=Olló) "))
     except:
       print("számot adj meg!")
-    if 0 < A < 4:
-      pass
-    else:
+    if not 0 < A < 4:
       print("Válassz a 3 lehetőség közül!")
       A = False
   if gep_elleni == 2:
-    while B == False:
+    while not B:
       try:
-        B = int(input("'B' játékos tipje: (1=Kő, 2=Papír, 3=Olló)"))
-
+        B = int(input("'B' játékos tipje: (1=Kő, 2=Papír, 3=Olló) "))
       except:
         print("számot adj meg!")
-      if 0 < B < 4:
-        pass
-      else:
+      if not 0 < B < 4:
         print("Válassz a 3 lehetőség közül!")
         B = False
   else:
