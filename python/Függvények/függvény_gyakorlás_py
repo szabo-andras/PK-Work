@@ -1,0 +1,37 @@
+#Alap eset:
+""" 
+a = 12
+b = 24
+terulet = a * b
+print(terulet)
+ """
+#Függvénnyel:
+""" 
+def terület(a, b):
+    return a*b
+
+print(terület(a, b))
+ """
+#Osztály létrehozásával:
+
+class Terület_számítás:
+    #Ez a konstruktor függvény (__init__) létrehoz egy objektumot
+    def __init__(self, oldal1, oldal2):
+        self.oldal1 = oldal1
+        self.oldal2 = oldal2
+        
+    def téglalap_területe(self):
+        terulet = self.oldal1 * self.oldal2
+        return terulet
+    
+    
+    #Bemenet
+a = 12
+b = 24
+
+
+# Itt hozzuk létre az objektumot
+t1 = Terület_számítás(a, b)
+
+    #Kimenet
+print(t1.téglalap_területe())

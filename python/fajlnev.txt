@@ -1,0 +1,6 @@
+Ez egy több
+soros
+szöveg, amit beíratok
+egy fájlba.
+
+[András Szabó]

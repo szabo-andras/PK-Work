@@ -1,0 +1,10 @@
+def függvény(a=111, *számok, **mellékek):
+    print("A=", a)
+
+    for szám in számok:
+        print(szám)
+
+    for kulcsszó, érték in mellékek.items():
+        print(kulcsszó, érték)
+
+függvény(222, 1, 2, Béla=1234, Géza=5678, Aladár=1357)
